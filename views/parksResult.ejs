@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/public/css/css.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page8</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home page</a>
+      <a href="/signIn">Sign In</a>
+      <a href="/signUp">Sign up</a>
+    </nav>
+
+    <div class="gridContainer">
+      <div class="header">
+        <h1>Someone to Run With</h1>
+      </div>
+
+      <div class="left">
+        <img
+          src="/public/assets/dogs.jpg"
+          alt="dogs"
+          width="250"
+          height="300"
+        />
+      </div>
+
+      <div class="right">
+        <img
+          src="public/assets/Canaan-Dog1.jpg"
+          alt="dogs"
+          width="300"
+          height="300"
+        />
+      </div>
+
+      <div class="center">
+        <h2>Look what we found for you!!!</h2>
+        <h2>THANK YOU</h2>
+        <table>
+          <tr>
+            <td>Park - address</td>
+            <td>Size</td>
+            <td>Average size</td>
+            <td>Distance from you</td>
+          </tr>
+          <% data.parks.forEach(park => { %>
+          <tr>
+            <td><%= park.name %></td>
+            <td><%= park.park_size %></td>
+            <td><%= park.city %></td>
+            <td><%= park.distance.toFixed(2) %> m</td>
+          </tr>
+          <% }); %>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      MAKE YOUR DOG HAPPY ! <br />
+      Rotem Hazan © - WEB course 2022
+    </footer>
+  </body>
+</html>

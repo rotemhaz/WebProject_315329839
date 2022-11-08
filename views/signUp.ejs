@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/css/css.css">
+    <script src="/public/js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+</head>
+<body>
+    <body>
+        <nav>
+            <a href="/" >Home page</a>
+            <a href="/signIn" >Sign In</a>
+            <a href="/signUp">Sign up</a>
+        </nav>
+    
+        <!--set a grid-->
+        <div class="gridContainer">
+    
+            <div class ="header">
+                <h1>Someone to Run With</h1>
+            </div>
+    
+            <!-- call the function that show about our friendship-->
+            <div class = "left">
+                <h2>We want to be your friend!</h2>
+                <button onclick="wantSeeMore()">FOR MORE ABOUT FRIENDSHIP</button>
+                    <div id = "seeMore" >As part of our membership you will receive many discounts at the leading food stores for the benefit of your dogs. In addition, you have the option of a 24/7 veterinary service over the phone if there is an urgent case. We do our best to keep your dog in the best possible way!</div>
+            </div>
+            
+            <!--enter all the details about the user-->
+            <div class = "right">
+                <form  action="/signUp" method="post">
+                    <label for="userName"> User name </label><br>
+                    <input type ="text" id="userName" name="userName"><br>
+                    <label for="password"> Password </label><br>
+                    <input type ="password" id="password" name="password"><br>
+                    <label for="phoneNumber"> Phone Number</label><br>
+                    <input type ="number" id="phoneNumber" name="phoneNumber"><br>
+                    <label for="dogAge"> Dog's age </label><br>
+                    <input type ="number" id="dogAge" name="dogAge"><br>
+                    <label for="dogType"> Dog's Type </label><br>
+                    <input type ="text" id="dogType" name="dogType"><br>
+                    <label for="weight"> Dog's weight </label><br>
+                    <input type ="number" id="weight" name="weight"><br><br>
+                    <input type="submit" id="button" value="Sign Up">
+               </form>
+            </div> 
+    
+            <div class="center">
+                <img src="/public/assets/dogs.jpg" alt="dogs" width="300"  height="400">
+            </div>
+    
+        </div>
+    
+        <footer>MAKE YOUR DOG HAPPY ! <br> Rotem Hazan © - WEB course 2022 </footer>
+</body>
+</html>
+
+
